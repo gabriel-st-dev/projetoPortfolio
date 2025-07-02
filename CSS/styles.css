@@ -1,0 +1,160 @@
+*{
+    /* RESETANDO CONFIG DO NAVEGADOR E DECLARANDO FONTE A SER USADA */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    /* MUDANDO COR DE FUNDO DO BODY */
+    background-color: #d7dbe1;
+}
+
+header{
+    /* DECLARANDO O HEADER COMO FLEX PARA MANIPULAR ELEMENTOS COMO TÍTULO E NAVBAR, ALÉM DE MUDAR CORES E ACRESCENTAR BORDER */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    border-bottom: 10px solid #1c4089 ;
+    background-color: #2454b3;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+#nav-bar{
+    /* ORGANIZANDO NAVBAR E REMOVENDO ESTILO DE LISTA */
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+#nav-bar li a{
+    /* ADICIONANDO TRANSIÇÃO PARA EFEITO NA NAVBAR */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+
+#nav-bar li a:hover{
+    /* PSEUDO CLASSE USADA PARA ADICIONAR EFEITO AO PASSAR MOUSE POR CIMA DA NAVBAR */
+    text-decoration:underline;
+    font-size: 18px;
+}
+
+
+#conteiner{
+    /* CONTEINER DE CONTEÚDO PRINCIPAL */
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.title{
+    /* ESTILIZANDO TÍTULOS DAS SEÇÕES */
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #1c4089;
+    display: inline-block;
+}
+
+p{
+    /* JUSTIFICANDO TEXTOS */
+    text-align:justify;
+}
+
+.page-section{
+    margin-bottom: 2rem;
+}
+
+.conteiner-cards{
+    /* ORGANIZANDO OS CARDS DO PORTFOLIO */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.site-card{
+    max-width: 250px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.site-card a{
+    text-decoration: none;
+    color: #2454b3;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.site-card a:hover{
+    /* ADICIONANDO EFEITO NO LINK DOS CARDS */
+    text-decoration: underline;
+}
+
+.site-card img{
+    border: 5px solid #1c4089;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+
+form{
+    /* AJUSTANDO O FORMULÁRIO */
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+    gap: 8px;
+    align-items: center;
+}
+
+
+form textarea{
+    /* LIMITANDO A CAIXA DE TEXTO DA MENSAGEM */
+    resize: none;
+    height: 200px;
+
+}
+
+form input,
+form textarea{
+    /* ESTILIZANDO BOTÃO E CAMPOS DE TEXTO PARA COMBINAR COM A PÁGINA */
+    border-radius: 20px;
+    padding: 15px 10px;
+    font-size: 15px;
+    width: 400px ;
+    border: none;
+    color: #2454b3;
+    outline-color: #1c4089;
+
+}
+
+form input[type="button"]{
+    background-color: #1c4089;
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+}
+
+form input[type="button"]:hover{
+    background-color: #2454b3;
+}
+
+footer{
+    /* ESTLIZANDO FOOTER */
+    height: 150px;
+    background-color: #2454b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 10px solid #1c4089
+}
+
+footer p{
+    color: #fff;
+    font-weight: bold;
+}
